@@ -2,6 +2,7 @@
 <html lang="en">
     <head>
         <title>Google</title>
+        <link rel="stylesheet" href="path/to/font-awesome/css/font-awesome.min.css">
     </head>
     <style>
         
@@ -19,7 +20,7 @@
         position: absolute;
         border-radius: 100px;
         height: 40px;
-        width: 500px;
+        width: 520px;
         
                 
     }
@@ -60,28 +61,63 @@
      outline: none;
      font-size: 19px;
      border-radius: 100px;
-     position: relative;
-     top: 5px;
-     left: 5px;
+     position: absolute;
+     top: 3px;
+     left: 25px;
+     bottom: 60px;
+     
+     
 
     
     }
+    .bar{
+        border: solid black;
+        border-width: 45px;
+        font-size: 506px;
+    }
+    .button{
+        border:  #f8f9fa;
+        border-width: 1px;
+        background-color:#f8f9fa;
+        height: 36px;
+        font-weight: bold;
+        font-family: sans-serif;
+        cursor: pointer;
+        border-radius: 5px;
+    
+    }
+    .button:hover{
+        background-color: #c3c9d0b7;
 
-    
-    
+    }
+    .button:active{
+        border: solid;
+        border-color: rgb(90, 90, 244);
+        border-width: 2px;
+
+    }
+   
     </style>
     <body>
         
         
        <div class="box">
+       
         <form action="https://google.com/search">
             
+                <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+                 integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+                  crossorigin="anonymous"
+                   referrerpolicy="no-referrer"
+                    >
+                <i class="fa fa-search" aria-hidden="true" style="position: absolute;left:4px; top: 10px;"></i>
             <input type="text" name="q" placeholder="Enter Search">
+            
             <br>    
             <br>
             <br>
             <div style="margin: 11px,4px; padding-left: 300px; position: fixed ;left: 445px;">
-            <input type="submit" value="Google Search">
+            <input type="submit" value="Google Search" class="button">
             <button onclick="history.back()" class="button">Feeling lucky</button>
             </div>
         </form>
@@ -90,7 +126,7 @@
        <div style="display: inline-block;padding-left: 1200px; ">
        
             <a href="image.html" style="margin-right:20px; text-decoration: none;color: black;" >Google Image</a>
-            <a href="advance.html" style="text-decoration: none;color: black;">Google advance</a>
+            <a href="advance.html" style="text-decoration: none;color: black;" class="adv">Google advance</a>
            
 
         
