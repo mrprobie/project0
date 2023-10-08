@@ -30,7 +30,7 @@
     }
     
     img{
-        height: 272px;
+        height: 230px;
         width: 450px;
         position: absolute;
         top: 3px;
@@ -96,14 +96,28 @@
         border-width: 2px;
 
     }
-   
+    .imgg{
+        
+        position: absolute;
+        top: 375px;
+        left: 876px;
+        color: rgb(90, 90, 244);
+        font-size: 20px;
+    }
+    .search{
+      text-decoration: none;
+      color: black;
+    }
+    .search:hover{
+      text-decoration: underline;
+    }
     </style>
     <body>
         
         
        <div class="box">
        
-        <form action="https://google.com/search">
+        <form method="get"  action="http://images.google.com/images">
             
                 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
                  integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
@@ -117,7 +131,7 @@
             <br>
             <br>
             <div style="margin: 11px,4px; padding-left: 300px; position: fixed ;left: 445px;">
-            <input type="submit" value="Google Search" class="button">
+            <input type="submit" value="Google image" class="button">
             <button onclick="history.back()" class="button">Feeling lucky</button>
             </div>
         </form>
@@ -125,12 +139,13 @@
        <img src="gog.png" alt="google">
        <div style="display: inline-block;padding-left: 1200px; ">
        
-            <a href="image.html" style="margin-right:20px; text-decoration: none;color: black;" >Google Image</a>
-            <a href="advance.html" style="text-decoration: none;color: black;" class="adv">Google advance</a>
+           
+            <a href="index.html"  class="search">Google Search</a>
            
 
         
        
        </div>
+       <div class="imgg">images</div>
     </body>
 </html>
